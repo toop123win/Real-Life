@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/diaryCreateTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/diaryCreateType"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/smile" />
+
+        <TextView
+            android:id="@+id/diaryCreateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_circle_white_orange_line"
+            android:hint="日记题目"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:id="@+id/diaryCreateContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_circle_white_orange_line"
+            android:gravity="top"
+            android:textSize="16sp"
+            android:hint="日记内容"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/diaryCreateMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="音乐播放中"
+        android:textColor="@color/white"/>
+</LinearLayout>

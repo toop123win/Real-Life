@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.library.widget.ResizableImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_create_schedule" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:paddingTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/createSchTime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:hint="请选择时间"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_white_orange_line"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="日程"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/createSchContent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:hint="输入日程内容"
+                android:textSize="16sp"
+                android:gravity="top"
+                android:padding="10dp"
+                android:background="@drawable/bg_circle_white_orange_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="类别"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/createSchType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:hint="请选择类别"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle_white_orange_line"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/createSchSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="保存"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/white"/>
+        <Button
+            android:id="@+id/createSchCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>
